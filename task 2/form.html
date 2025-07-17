@@ -24,10 +24,11 @@
                 <label for="password">Enter the password : </label>
                 <input type="password" name="password" id="" onchange="handelchange(event)">
             </div>
-            <div id="strength" style="margin-top:5px; font-weight:bold;"></div>
+            <div id="strength" style="transition: all 0.7s ease; visibility: visible;
+            opacity:1; margin-left:10px; margin-top:5px; font-weight:bold;"></div>
             <div class="confirmpassword">
                 <label for="confirmpassword">Re enter the password : </label>
-                <input type="password" name="confirm password" onchange="handelchange(event)">
+                <input type="password" name="confirm password" onchange="handelchange(event);checkpassword(event)">
             </div>
             <div class="dob">
                 <label for="dob">Select the Date of Birth : </label>
