@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #007acc;
+}
+
+a:hover {
+  color: #005a99;
+}
+
+nav {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+nav h4 {
+  font-size: 1.5rem;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #fff;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+  flex: 2;
+  padding-right: 1rem;
+}
+
+aside img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid #007acc;
+}
+
+.skills {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills ul {
+  list-style-type: circle;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+.projectSection {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projectSection h2 {
+  color: #007acc;
+  margin-bottom: 0.5rem;
+}
+
+.projectSection p {
+  margin-bottom: 1rem;
+}
+
+.projectSection a {
+  font-weight: bold;
+}
+
+.contacts {
+  background-color: white;
+  color: #030303;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.contacts ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.contacts li {
+  display: flex;
+  align-items: center;
+}
+
+.contacts li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro {
+    padding-right: 0;
+  }
+
+  aside {
+    margin-top: 1rem;
+  }
+
+  .contacts ul {
+    flex-direction: column;
+  }
+}
