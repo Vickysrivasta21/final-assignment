@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post" class="form">
+            <div class="name">
+                <label for="name">Enter your name : </label>
+                <div class="input">
+                    <input type="text" name="firstname" placeholder="first name" onchange="handelchange(event)">
+                    <input type="text" name="lastname" placeholder="last name" onchange="handelchange(event)">
+                </div>
+            </div>
+            <div class="email">
+                <label for="email">Enter the email : </label>
+                <input type="email" name="email" onchange="handelchange(event)">
+            </div>
+            <div class="password">
+                <label for="password">Enter the password : </label>
+                <input type="password" name="password" id="" onchange="handelchange(event)">
+            </div>
+            <div id="strength" style="margin-top:5px; font-weight:bold;"></div>
+            <div class="confirmpassword">
+                <label for="confirmpassword">Re enter the password : </label>
+                <input type="password" name="confirm password" onchange="handelchange(event)">
+            </div>
+            <div class="dob">
+                <label for="dob">Select the Date of Birth : </label>
+                <input type="date" name="dob" id="dob" onchange="handelchange(event)">
+            </div>
+            <div class="gender">
+                <label for="gender">Select your gender : </label>
+                <select name="gender" class="gender" onchange="handelchange(event)">
+                    <option value="">--SELECT--</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="others">others</option>
+                </select>
+            </div>
+            <div class="profile">
+                <label for="photo">Upload the photo : </label>
+                <input type="file" name="profile" id="" onchange="handelchange(event)">
+                <button>upload file</button>
+            </div>
+            <div class="terms">
+                <h4>Do you agree to the terms and conditions ?</h4>
+                <input type="checkbox" name="terms" class="check" onchange="handelchange(event)">
+            </div>
+            <div class="btn">
+                <button type="submit" name="button" class="button" onclick="show(e)" disabled>Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

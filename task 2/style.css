@@ -1,0 +1,80 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    border: none;
+    box-shadow: 0px 0px 15px rgb(135, 133, 133);
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    padding: 20px;
+}
+.name,.email,.dob,.gender,.password,.confirmpassword{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.profile{
+    display: flex;
+    gap: 12px;
+    padding: 15px;
+}
+.terms{
+    display: flex;
+    align-items: center;
+}
+input{
+    padding: 8px;
+    border-radius: 7px;
+    border: 1px solid rgb(154, 152, 152);
+    height: 20px;
+    outline: none;
+}
+input:focus{
+    outline:none;
+    outline-color: rgb(95, 199, 240);
+}
+select{
+    padding: 2px;
+    border-radius: 7px;
+    border: 1px solid rgb(154, 152, 152);
+    height: 40px;
+}
+.terms{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+.profile button{
+    width: 90px;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(35, 155, 246);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.btn button{
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(35, 155, 246);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+button{
+    font-size: 15px;
+}
